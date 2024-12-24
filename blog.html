@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <header class="">
+            <div class="navbar bg-[#F9F7F3] px-16 py-6">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn bg-[#B4F461] xl:text-lg 2xl:text-xl  rounded-lg font-semibold">
+                        <a href="./blog.html">Blog</a>
+                    </button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex items-center gap-2">
+                        <img src="/assets/logo.png" class="w-auto h-[48px]" alt="">
+                        <h2 class="xl:text-lg 2xl:text-xl font-semibold">Donate Bangladesh</h2>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex items-center gap-1">
+                        <img src="./assets/coin.png" alt="" />
+                        <h4><span id="total-balance">5500</span> BDT</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="p-20 space-y-8">
+            <h1 class="text-5xl font-bold">Important Faq</h1>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-medium">What is Document object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        structure of a webpage as a tree of objects, allowing developers to interact with and manipulate
+                        the content, structure, and styles of a webpage using programming languages like JavaScript.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-medium">How do you select an element from DOM?</div>
+                <div class="collapse-content">
+                    <p>document.getElementById('id')</p>
+                    <p>document.querySelector('.myDiv')</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-medium">What is event delegation in the context of DOM,and why
+                    it is useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in JavaScript where you add a single event listener to a parent
+                        element to manage events for its child elements. Instead of adding individual event listeners to
+                        multiple child elements, the parent element listens for events, and the event is captured as it
+                        propagates up the DOM tree.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and style
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>element.getAttribute('attributeName');
+                    </p>
+                    <p>element.setAttribute('attributeName', 'value');
+                    </p>
+                    <p>element.removeAttribute('attributeName');
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
